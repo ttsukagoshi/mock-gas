@@ -12,8 +12,8 @@ env:
 # Global Vars #
 ###############
 globals:
-  # Atomics: readonly
-  # SharedArrayBuffer: readonly
+  Atomics: readonly
+  SharedArrayBuffer: readonly
 
 ###############
 # Parser vars #
