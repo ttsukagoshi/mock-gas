@@ -1,2 +1,3 @@
-# mock-gas
-Mock Google Apps Script classes that can be used for Jest testings
+# Mock Google Apps Script Classes
+
+Mock Google Apps Script classes that can be used for Jest testings.
