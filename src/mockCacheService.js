@@ -1,7 +1,7 @@
-/**
- * Classes to mock classes related to cache service
- * @see https://developers.google.com/apps-script/reference/cache?hl=en
- */
+/////////////////////////////////////////////////////////////////////
+// Classes to mock classes related to cache service                //
+// https://developers.google.com/apps-script/reference/cache?hl=en //
+/////////////////////////////////////////////////////////////////////
 
 /**
  * CacheService class
