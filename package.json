@@ -1,0 +1,29 @@
+{
+  "name": "mock-gas",
+  "version": "1.0.0",
+  "description": "Mock Google Apps Script classes that can be used for Jest testings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttsukagoshi/mock-gas.git"
+  },
+  "keywords": [
+    "google-apps-script",
+    "jest"
+  ],
+  "author": "ttsukagoshi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ttsukagoshi/mock-gas/issues"
+  },
+  "homepage": "https://github.com/ttsukagoshi/mock-gas#readme",
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1"
+  }
+}
