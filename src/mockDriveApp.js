@@ -10,6 +10,12 @@ const { MOCK_FILES } = require('./mockDriveFiles');
  * @see https://developers.google.com/apps-script/reference/drive/drive-app?hl=en
  */
 class MockDriveApp {
+  static Access = {
+    PRIVATE: 'PRIVATE',
+  };
+  static Permission = {
+    VIEW: 'VIEW',
+  };
   /**
    * @param {String} id
    */
@@ -38,6 +44,10 @@ class MockFile {
     this.viewers = fileObj.users.viewers;
     this.sheets = fileObj.sheets;
     this.mimeType = fileObj.mimeType;
+    this.sharingStatus = {
+      access: '',
+      permission: '',
+    };
   }
   getId() {
     return this.id;
@@ -56,6 +66,26 @@ class MockFile {
   }
   getMimeType() {
     return this.mimeType;
+  }
+  /**
+   * @param {String} editor
+   */
+  removeEditor(editor) {
+    this.editors = this.editors.filter((element) => element !== editor);
+  }
+  /**
+   * @param {String} viewer
+   */
+  removeViewer(viewer) {
+    this.viewers = this.viewers.filter((element) => element !== viewer);
+  }
+  /**
+   * @param {String} access
+   * @param {String} permission
+   */
+  setSharing(access, permission) {
+    this.sharingStatus.access = access;
+    this.sharingStatus.permission = permission;
   }
 }
 
